@@ -1,0 +1,9 @@
+{% extends 'home/base.html' %}
+
+{%block content %}
+
+<h1>Subject: <br />{{ mail.subject }}</h1>
+<p>{{ mail.body }}</p>
+<p>From: {{ mail.sender }}</p>
+
+{% endblock %}
