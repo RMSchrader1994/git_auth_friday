@@ -12,6 +12,8 @@ def sent(request):
     
 def view_message(request, id):
     mail = get_object_or_404(Message, pk=id)
+    message.read=True
+    message.save()
     return render(request, "messanger/mail.html", {'mail': mail})
     
 def compose(request): 

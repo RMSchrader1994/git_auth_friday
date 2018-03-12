@@ -40,12 +40,13 @@
                     <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
                     <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
                     {% endif %}
-                    {% if user.messages_received.all|length > 0 %}
                     <li><a href="{% url 'inbox' %}">
                         <i class="fa fa-envelope"></i> Inbox 
+                        {% if user.messages_received.all|length > 0 %}
                         <label class="badge badge-warning">{{ user.messages_received.all|length }}</label>
+                        {% endif %}
                     </a></li>
-                    {% endif %}
+                    
                 </ul>
             </div>
         </div>
