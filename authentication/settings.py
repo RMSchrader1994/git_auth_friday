@@ -26,7 +26,8 @@ SECRET_KEY = '6r=vqx2ascgob$&s2d&-))*n#m=(#bw@)zi84hs56qs-prz8az'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-authentication-practice-rmschrader1994.c9users.io']
+ALLOWED_HOSTS = ['django-authentication-practice-rmschrader1994.c9users.io',
+                  'django-auth-practice.herokuapp.com']
 
 
 # Application definition
